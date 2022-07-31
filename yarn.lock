@@ -48,6 +48,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hookform/resolvers@npm:^2.9.7":
+  version: 2.9.7
+  resolution: "@hookform/resolvers@npm:2.9.7"
+  peerDependencies:
+    react-hook-form: ^7.0.0
+  checksum: 1449ad8ae9de5e170a45136e0a929a82ae40b61ca1727dae2b3292aee29771b05cfd6335321a5c6429f77a4b9d69eb9434af804c1ef4ae29e87bb8a7c7939025
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.9.2":
   version: 0.9.5
   resolution: "@humanwhocodes/config-array@npm:0.9.5"
@@ -2264,6 +2273,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "meta-my-tickets@workspace:."
   dependencies:
+    "@hookform/resolvers": ^2.9.7
     "@prisma/client": ^4.1.1
     "@trpc/client": ^9.26.2
     "@trpc/next": ^9.26.2
@@ -2280,6 +2290,7 @@ __metadata:
     prisma: ^4.1.1
     react: 18.2.0
     react-dom: 18.2.0
+    react-hook-form: ^7.34.0
     react-query: 3.39.2
     superjson: ^1.9.1
     tailwindcss: ^3.1.7
@@ -2965,6 +2976,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.34.0":
+  version: 7.34.0
+  resolution: "react-hook-form@npm:7.34.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 2b4a6f6ca5b3f729b88aa14a1a8c47ba86405d9c5fef2560b1dc85ac6fe1b105326571b8e1e857f8d8f3449636062d2d6201809918b5bb37f6f8f0b9c6cd6e2c
   languageName: node
   linkType: hard
 

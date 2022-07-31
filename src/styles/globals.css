@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+form {
+  @apply flex flex-col gap-4 items-center;
+  @apply bg-white;
+  @apply rounded max-w-sm drop-shadow-lg p-4;
+}
+
+input, select {
+  @apply px-2 py-1;
+  @apply rounded;
+  @apply bg-slate-100
+}
+
+.input-container {
+  @apply flex flex-col gap-2;
+  @apply w-full;
+}
+
+button {
+  @apply rounded;
+  @apply p-2;
+  @apply bg-blue-600 drop-shadow-sm;
+  @apply text-white;
+
+}
