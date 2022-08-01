@@ -11,9 +11,8 @@ export const RegisterForm = () => {
     resolver: zodResolver(RegisterSchema),
   });
 
-  const onSubmit = async (data: Register) => {
-    console.log(data);
-  };
+
+  const onSubmit = async (data: Register) => {};
 
   return (
     <form onSubmit={handleSubmit((data) => onSubmit(data))}>
@@ -21,6 +20,7 @@ export const RegisterForm = () => {
       <div className="input-container">
         <label htmlFor="name">Nom et prénoms</label>
         <input type="text" placeholder="John Doe" {...register("name")} />
+        <p className="text-red-500">{errors.name && errors.name.message}</p>
       </div>
       <div className="input-container">
         <label htmlFor="phone">Téléphone</label>
@@ -30,14 +30,24 @@ export const RegisterForm = () => {
           </select>
           <input type="text" placeholder="0101010101" {...register("phone")} />
         </div>
+        <p className="text-red-500">
+          {errors.diallingCode && errors.diallingCode.message}
+        </p>
+        <p className="text-red-500">{errors.phone && errors.phone.message}</p>
       </div>
       <div className="input-container">
         <label htmlFor="password">Mot de passe</label>
         <input type="password" {...register("password")} />
+        <p className="text-red-500">
+          {errors.password && errors.password.message}
+        </p>
       </div>
       <div className="input-container">
         <label htmlFor="password_confirmation">Confirmation mot de passe</label>
         <input type="password" {...register("password_confirmation")} />
+        <p className="text-red-500">
+          {errors.password_confirmation && errors.password_confirmation.message}
+        </p>
       </div>
       <button className="w-full">Inscription</button>
     </form>
